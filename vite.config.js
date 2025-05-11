@@ -18,4 +18,10 @@ export default defineConfig({
       },
     },
   },
+  server: { // Add this server configuration block
+    https: {
+      key: fs.readFileSync('/etc/nginx/ssl/fullchain1.pem'),
+      cert: fs.readFileSync('/etc/nginx/ssl/privkey1.pem'),
+    }
+  },
 })
