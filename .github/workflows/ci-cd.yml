@@ -63,7 +63,8 @@ jobs:
             # -d: run in detached mode
             # -p 80:80: map droplet's port 80 to container's port 80
             # --name: give the container a name
-            docker run -d -p 80:80 --name portfolio-container ${{ secrets.DOCKER_HUB_USERNAME }}/portfolio-app:latest
+            # docker run -d -p 80:80 --name portfolio-container ${{ secrets.DOCKER_HUB_USERNAME }}/portfolio-app:latest
+            docker run -d -p 80:80 -p 443:443 --name portfolio-container -v /etc/letsencrypt/live/jyllandteodosio.dev:/etc/nginx/ssl ${{ secrets.DOCKER_HUB_USERNAME }}/portfolio-app:latest
 
             # Optional: Clean up old unused Docker images
             # docker image prune -f
