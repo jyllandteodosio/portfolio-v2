@@ -19,11 +19,15 @@ RUN npm run build
 # Use a lightweight web server to serve the built files
 FROM nginx:alpine AS production
 
+# Copy the custom Nginx configuration
+COPY nginx.conf /etc/nginx/nginx.d/default.conf 
+# Or /etc/nginx/nginx.conf, depending on Nginx image structure
+
 # Copy the built files from the previous stage
 COPY --from=build /app/dist /usr/share/nginx/html
 
-# Expose port 80
-EXPOSE 80
+# Expose ports 80 and 443
+EXPOSE 80 443
 
 # Start the Nginx server
 CMD ["nginx", "-g", "daemon off;"]
