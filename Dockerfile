@@ -15,3 +15,14 @@ COPY . .
 
 # Build the application
 RUN npm run build
+
+# Use a lightweight Nginx image
+FROM nginx:alpine AS production
+
+COPY --from=build /app/dist /usr/share/nginx/html
+
+# Expose port 80 internally within the Docker network
+EXPOSE 80
+
+# Start the Nginx server
+CMD ["nginx", "-g", "daemon off;"]
