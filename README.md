@@ -1,12 +1,29 @@
-# React + Vite
+# Portfolio App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a personal portfolio web application built using **React** and **Vite**. It showcases my professional experience, projects, and contact information. The app is styled with **Tailwind CSS** and includes animations and interactive components.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Responsive Design**: Fully responsive layout for desktop and mobile devices.
+- **Interactive Navigation**: Smooth scrolling and active section highlighting.
+- **Project Showcase**: Displays projects with descriptions, skills used, and image galleries.
+- **Contact Section**: Includes links to email, GitHub, and LinkedIn with SVG icons.
+- **Optimized Performance**: Built with Vite for fast development and optimized builds.
+- **Dockerized Deployment**: Easily deployable using Docker.
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend**: React, Tailwind CSS
+- **Build Tool**: Vite
+- **Icons**: SVG icons with `vite-plugin-svgr`
+- **Deployment**: Docker, Nginx
+
+## Folder Structure
+src/ 
+├── animations/ # Animation-related utilities 
+├── assets/ # Static assets (images, SVGs, etc.) 
+├── components/ # React components 
+├── App.jsx # Main app component 
+├── App.css # Global styles 
+├── main.jsx # Entry point
+
