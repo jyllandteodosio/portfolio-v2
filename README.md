@@ -19,11 +19,11 @@ This is a personal portfolio web application built using **React** and **Vite**.
 - **Deployment**: Docker, Nginx
 
 ## Folder Structure
-src/ 
-├── animations/ # Animation-related utilities 
-├── assets/ # Static assets (images, SVGs, etc.) 
-├── components/ # React components 
-├── App.jsx # Main app component 
-├── App.css # Global styles 
-├── main.jsx # Entry point
+    src/ 
+    ├── animations/ # Animation-related utilities 
+    ├── assets/ # Static assets (images, SVGs, etc.) 
+    ├── components/ # React components 
+    ├── App.jsx # Main app component 
+    ├── App.css # Global styles 
+    ├── main.jsx # Entry point
 
