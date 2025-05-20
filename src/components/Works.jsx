@@ -56,7 +56,7 @@ const Works = React.forwardRef(({ id }, ref) => {
 						<div className="roles flex-full pb-6">
 							{Object.entries(roles).map(([role, { date }]) => (
 								<div key={role} className="flex role text-base first:font-semibold first:text-white first:pb-1 text-[var(--secondary-color)] font-normal">
-									<p className="date w-[8rem]">{date}</p>
+									<p className="date pr-6">{date}</p>
 									<p className="job-title">{role}</p>
 								</div>
 							))}
