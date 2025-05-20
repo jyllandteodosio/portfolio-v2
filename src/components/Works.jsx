@@ -1,25 +1,26 @@
 import React from 'react';
-import TaskaruImage from '../assets/Taskaru.png';
+import TaskaruImage1 from '../assets/Taskaru_1.png';
+import TaskaruImage2 from '../assets/Taskaru_2.png';
 import ImageGallery from './ImageGallery';
 
 const Works = React.forwardRef(({ id }, ref) => {
 	const works = {
 		"TASKARU": {
-			// url: "http://taskaru.jyllandteodosio.com",
-			url: "http://google.com",
+			url: "http://taskaru.jyllandteodosio.dev",
 			roles: {
 				"Full-Stack Engineer": {
-					date: "2025 - Present",
+					date: "January 2025 - May 2025",
 				},
 			},
 			description: "Task management application designed for seamless, real-time collaboration among users. Developed this project primarily as a hands-on way to deepen my understanding and practical skills with the MERN stack and TypeScript. It focuses on creating an interactive and responsive environment where users can manage shared tasks effectively and see updates live.",
 			skills: "Node.js · Express · MongoDB · ReactJS · TypeScript · HTML5 · CSS · TailwindCSS · Git · Docker",
 			images: [
-				TaskaruImage,
+				TaskaruImage1,
+				TaskaruImage2
 			]
 		},
 		"Carpool Application": {
-			url: "http://google.com",
+			url: "#",
 			roles: {
 				"Full-Stack Engineer": {
 					date: "2022 - 2024",
@@ -30,7 +31,7 @@ const Works = React.forwardRef(({ id }, ref) => {
 			images: []
 		},
 		"Online Helpers Australia Website": {
-			url: "http://google.com",
+			url: "#",
 			roles: {
 				"Front-End Web Developer": {
 					date: "2019 - 2020",
