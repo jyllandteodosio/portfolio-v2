@@ -1,6 +1,21 @@
 import React from 'react';
 import TaskaruImage1 from '../assets/Taskaru_1.png';
 import TaskaruImage2 from '../assets/Taskaru_2.png';
+import DriverImage1 from '../assets/Driver_1.png';
+import DriverImage2 from '../assets/Driver_2.png';
+import DriverImage3 from '../assets/Driver_3.png';
+import DriverImage4 from '../assets/Driver_4.png';
+import DriverImage5 from '../assets/Driver_5.png';
+import DriverImage6 from '../assets/Driver_6.png';
+import DriverImage7 from '../assets/Driver_7.png';
+import DriverImage8 from '../assets/Driver_8.png';
+import DriverImage9 from '../assets/Driver_9.png';
+import DriverImage10 from '../assets/Driver_10.png';
+import PassengerImage1 from '../assets/Passenger_1.png';
+import PassengerImage2 from '../assets/Passenger_2.png';
+import PassengerImage3 from '../assets/Passenger_3.png';
+import PassengerImage4 from '../assets/Passenger_4.png';
+import AdminImage1 from '../assets/Admin_1.png';
 import ImageGallery from './ImageGallery';
 
 const Works = React.forwardRef(({ id }, ref) => {
@@ -28,7 +43,23 @@ const Works = React.forwardRef(({ id }, ref) => {
 			},
 			description: "Designed and built an internal carpool application to aid Infor Manila employees during the pandemic. Integrated a report generation feature for usage tracking. Recognized as “Team of the Year (2022)” at Infor Manila’s annual employee recognition program for developing a tool that brought value to the organization resulting in sustained business performance.",
 			skills: "PHP · Laravel · MySQL · JavaScript · HTML5 · CSS · Bootstrap · Git",
-			images: []
+			images: [
+				DriverImage1,
+				DriverImage2,
+				DriverImage3,
+				DriverImage4,
+				DriverImage5,
+				DriverImage6,
+				DriverImage7,
+				DriverImage8,
+				DriverImage9,
+				DriverImage10,
+				PassengerImage1,
+				PassengerImage2,
+				PassengerImage3,
+				PassengerImage4,
+				AdminImage1
+			]
 		},
 		"Online Helpers Australia Website": {
 			url: "#",

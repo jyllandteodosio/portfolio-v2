@@ -31,6 +31,31 @@ body {
 	-ms-overflow-style: none;
 }
 
+
+
+.transparent-scrollbar {
+	overflow-y: auto;
+	scrollbar-width: thin;
+	scrollbar-color: var(--secondary-color) transparent;
+	/* For Firefox */
+
+	&::-webkit-scrollbar {
+		width: 8px;
+		background: transparent;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: var(--secondary-color);
+		border-radius: 4px;
+	}
+
+	&::-webkit-scrollbar-track {
+		background: transparent;
+	}
+
+	-ms-overflow-style: none;
+}
+
 .nav-link {
 	font-weight: bold;
 	font-size: 1.25rem;

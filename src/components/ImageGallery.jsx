@@ -18,13 +18,13 @@ const ImageGallery = ({ images = [], project = 'Project' }) => {
 	return (
 		<div>
 			{images.length > 0 ? (
-				<div className="images flex flex-wrap gap-4 pt-6">
+				<div className="images flex flex-nowrap overflow-x-auto whitespace-nowrap gap-4 pt-6 pb-4 transparent-scrollbar">
 					{images.map((image, index) => (
 						<img
 							key={index}
 							src={image}
 							alt={`${project} screenshot ${index + 1}`}
-							className="w-1/5 min-w-[100px] cursor-pointer rounded border object-cover object-top shadow transition-shadow duration-200 ease-in-out hover:shadow-lg aspect-[3/2]"
+							className="w-[220px] cursor-pointer rounded border object-cover object-top shadow transition-shadow duration-200 ease-in-out hover:shadow-lg aspect-[3/2]"
 							onClick={() => openModal(image)}
 						/>
 					))}
