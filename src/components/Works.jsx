@@ -16,6 +16,11 @@ import PassengerImage2 from '../assets/Passenger_2.png';
 import PassengerImage3 from '../assets/Passenger_3.png';
 import PassengerImage4 from '../assets/Passenger_4.png';
 import AdminImage1 from '../assets/Admin_1.png';
+import OnlineHelpersImage1 from '../assets/OnlineHelpers_1.png';
+import OnlineHelpersImage2 from '../assets/OnlineHelpers_2.png';
+import OnlineHelpersImage3 from '../assets/OnlineHelpers_3.png';
+import OnlineHelpersImage4 from '../assets/OnlineHelpers_4.png';
+import OnlineHelpersImage5 from '../assets/OnlineHelpers_5.png';
 import ImageGallery from './ImageGallery';
 
 const Works = React.forwardRef(({ id }, ref) => {
@@ -70,7 +75,13 @@ const Works = React.forwardRef(({ id }, ref) => {
 			},
 			description: "Designed and developed a marketing website for Online Helpers Australia, showcasing their products and services.",
 			skills: "PHP · WordPress · MySQL · JavaScript · HTML5 · CSS · Bootstrap · Git · Adobe Creative Suite",
-			images: []
+			images: [
+				OnlineHelpersImage1,
+				OnlineHelpersImage2,
+				OnlineHelpersImage3,
+				OnlineHelpersImage4,
+				OnlineHelpersImage5
+			]
 		},
 	}
 

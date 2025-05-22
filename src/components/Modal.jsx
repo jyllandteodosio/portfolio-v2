@@ -42,12 +42,20 @@ const Modal = ({ isOpen, onClose, imageUrl, altText }) => {
 					className="mx-4 max-h-[90vh] max-w-4xl transform overflow-hidden rounded-lg bg-white p-4 shadow-xl sm:mx-auto"
 				>
 					{imageUrl && (
-						<img
-							src={imageUrl}
-							alt={altText || 'Enlarged view'}
-							className="h-auto w-full object-contain max-h-[calc(90vh-40px)]"
-							id="modal-title"
-						/>
+						<a
+							href={imageUrl}
+							target="_blank"
+							rel="noopener noreferrer"
+							tabIndex={-1}
+							title="Open image in new tab"
+						>
+							<img
+								src={imageUrl}
+								alt={altText || 'Enlarged view'}
+								className="h-auto w-full object-contain max-h-[calc(90vh-40px)]"
+								id="modal-title"
+							/>
+						</a>
 					)}
 				</div>
 
